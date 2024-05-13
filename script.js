@@ -2,14 +2,8 @@ const ROWS_TO_RENDER = 100;
 const COLS_TO_RENDER = 100;
 
 /**
- * Ideas:
- * Get the cells to report their own position, should never have to search the entire table.
- *  Should have a flat array that we can just use to find cells directly.
- *  Avoid O(n2)!
- * Double store the data: columns[rows], rows[colums]
- * Make sure view has seperation from models
- * Work out performance costs, make sure things update correctly
- *
+ * Spreadsheet.
+ * Allows the user to enter data and do basic equations.
  **/
 class DataCell {
   constructor(value, cell, equation) {
